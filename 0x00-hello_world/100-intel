@@ -1,6 +1,2 @@
 #!/bin/bash
-gcc -S -masm=intel -o "${CFILE%.c}.s" "$CFILE"
-echo -e "\t.file\t\"$CFILE\"" > "${CFILE%.c}.s.tmp"
-echo -e "\t.intel_syntax noprefix" >> "${CFILE%.c}.s.tmp"
-cat "${CFILE%.c}.s" >> "${CFILE%.c}.s.tmp"
-mv "${CFILE%.c}.s.tmp" "${CFILE%.c}.s"
+gcc -S -masm=intel $CFILE -o "${CFILE%.c}.s"
