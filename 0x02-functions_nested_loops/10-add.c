@@ -1,15 +1,13 @@
 #include "main.h"
 
 /**
- * main - Entry point.
+ * add - Adds two integers.
+ * @a: First integer.
+ * @b: Second integer.
  *
- * Return: Always 0.
+ * Return: Result of addition.
  */
-int main(void)
+int add(int a, int b)
 {
-    int n;
-
-    n = add(89, 9);
-    printf("%d\n", n);
-    return (0);
+    return (a + b);
 }
