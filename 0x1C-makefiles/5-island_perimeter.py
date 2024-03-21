@@ -23,7 +23,7 @@ def island_perimeter(grid):
             [0, 1, 0, 0, 0, 0],
             [0, 1, 1, 1, 0, 0],
             [0, 0, 0, 0, 0, 0]
-        ]
+         ]
         island_perimeter(grid)  # Output: 12
     """
     perimeter = 0
